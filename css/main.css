@@ -1,3 +1,15 @@
+@media (min-width: 992px) { 
+	
+	.shin-image { text-align: right; }
+	
+}
+@media (max-width: 992px) { 
+	
+	header { display: none; }
+	.shin-image { text-align: center; }
+	
+}
+
 body, html {
 	
 	padding: 0px;
