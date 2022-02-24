@@ -3,5 +3,117 @@ body, html {
 	padding: 0px;
 	margin: 0px;
 	overflow-x: hidden;
+	transition: all 0.5s;
+	
+}
+
+a {
+
+	cursor: pointer;
+	
+}
+
+.header-button {
+
+	display: inline-block;
+	padding: 20px 20px;
+	cursor: pointer;
+	
+}
+.header-button a {
+	
+	color: #616161;
+	text-decoration: none;
+
+}
+
+.who-i-am-title {
+
+	text-align: center; 
+	margin-top: 50px;
+	
+}
+
+.video-title {
+
+	text-align: center; 
+	margin-top: 150px;
+	
+}
+
+.project-card {
+
+	font-size: 18px; 
+	margin-top: 20px; 
+	background-color: white; 
+	padding: 30px 20px; 
+	border-radius: 10px;
+
+}
+
+.project-card-period {
+	
+	color: #98A8B9;
+	
+}
+
+.project-card-title {
+	
+	margin-top: 10px; 
+	border-bottom: #ccc solid 1px; 
+	font-size: 24px; 
+	padding-bottom: 20px;
+	
+}
+
+.project-card-role {
+
+	margin-top: 30px;
+
+}
+
+.project-card-role-content {
+
+	padding: 0px 20px; 
+	margin-top: 10px; 
+	font-size: 16px;
+
+}
+
+.project-card-work {
+
+	margin-top: 20px;
+
+}
+
+.project-card-work-list {
+
+	font-size: 16px;
+
+}
+
+.project-card-work-list .project-card-work-item-title:first-child {
+
+	margin-top: 10px;
+
+}
+.project-card-work-item-title {
+
+	margin-top: 20px;
+
+}
+.project-card-work-item-content {
+
+	padding: 0px 20px; 
+	margin-top: 10px; 
+	color: #616161;
+
+}
+
+.project-card-stack {
+	
+	border-top: #ccc solid 1px;
+	padding-top: 20px;
+	margin-top: 40px;
 	
 }

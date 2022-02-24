@@ -17,48 +17,33 @@
 <!-- 폰트어썸 -->
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-<style type="text/css">
 
-a {
+<link rel="stylesheet" href="css/main.css"/>
 
-	cursor: pointer;
-	
-}
-
-.header-button {
-
-	display: inline-block;
-	padding: 20px 20px;
-	cursor: pointer;
-
-}
-
-.who-i-am-title {
-
-	text-align: center; margin-top: 50px;
-	
-}
-
-.video-title {
-
-	text-align: center; margin-top: 150px;
-	
-}
-
-</style>
 
 </head>
 <body>
 
 <header style="position: fixed; left: 0px; top: 0px; width: 100%; text-align: center; font-size: 28px; font-weight: bold; background-color: white; z-index: 999;">
 	
-	<div class="header-button">Information</div>
-	<div class="header-button">Who I am?</div>
-	<div class="header-button">How do I work?</div>
-	
+	<div class="header-button">
+		<a href="#information">Information</a>
+	</div>
+	<div class="header-button">
+		<a href="#who-i-am">Who I am?</a>
+	</div>
+	<div class="header-button">
+		<a href="#how-do-i-work">How do I work?</a>
+	</div>
+	<div class="header-button">
+		<a href="#history">History</a>
+	</div>
+	<div class="header-button">
+		<a href="#history">Skill</a>
+	</div>
 </header>
 
-<div class="container" style="padding: 180px 100px;">
+<div id="information" class="container" style="padding: 180px 100px 130px 100px;">
 
 	<div class="row">
 		<div class="col-md-6" style="text-align: center;">
@@ -72,18 +57,22 @@ a {
 			<div style="font-size: 30px;"><i class="fab fa-github fa-fw"></i>&nbsp;<a href="https://github.com/zzinpan">https://github.com/zzinpan</a></div>
 			<div style="font-size: 30px;"><i class="far fa-home-lg-alt fa-fw"></i>&nbsp;경기도 화성시 동탄숲속로68</div>
 		</div>
+		<div class="col-md-12" style="font-weight: bold; margin-top: 20px; text-align: center; margin-top: 100px;">
+			<div>이 이력서는 2022년 2월 16일부터 작성하여, 꾸준히 업데이트할 계획입니다.</div>
+			<div>아래의 모든 내용은 모두 제가 작성하였고, 사실과 다름 없음을 확인합니다.</div>
+		</div>
 	</div>
 	
 	
 
 </div>
 
-<div class="container-fluid" style="background-color: black; color: white;">
+<div id="who-i-am" class="container-fluid" style="background-color: black; color: white;">
 
 	<div class="row" style="font-size: 30px; font-weight: bold; padding: 200px 100px;">
 	
 		<div class="col-md-12" style="text-align: center; font-size: 50px; text-align: center;">
-			신명철은 어떤사람일까요?
+			신명철은 어떤사람인가요?
 		</div>
 
 		<div class="col-md-12" style="margin-top: 50px; background-image: url('img/sentinels_Consul_ESFJ_introduction.svg'); height: 300px; background-repeat: no-repeat; background-position: center;"></div>
@@ -137,7 +126,7 @@ a {
 
 </div>
 
-<div class="container-fluid">
+<div id="how-do-i-work" class="container-fluid">
 
 	<div class="row" style="font-size: 30px; font-weight: bold; padding: 150px 100px;">
 	
@@ -186,7 +175,7 @@ a {
 	</div>
 </div>
 
-<div class="container-fluid" style="background-color: #eee;">
+<div id="history" class="container-fluid" style="background-color: #eee;">
 
 	<div class="row" style="font-size: 30px; font-weight: bold; padding: 150px 0px;">
 	
@@ -214,58 +203,78 @@ a {
 			<i class="far fa-chevron-double-down fa-2x"></i>
 		</div>
 		
-		<div class="col-md-6 col-md-offset-3" style="font-size: 18px; margin-top: 20px; background-color: white; padding: 20px; border-radius: 10px;">
-			<div style="color: #98A8B9;">
+		<div class="col-md-6 col-md-offset-3 project-card">
+			<div class="project-card-period">
 				2020.01 ~ 현재
 			</div>
-			<div style="margin-top: 20px;">
-				<div style="font-size: 24px;">
-					삼성전자 MES4.0 제조설계 운영
-				</div>
+			<div class="project-card-title">
+				삼성전자 MES4.0 제조설계 운영
 			</div>
 			
-			<div style="margin-top: 20px;">
+			<div class="project-card-role">
 				<div>역할</div>
-				<div style="padding-left: 20px; font-size: 16px;">시스템 모듈 리더 / 운영 / 개발</div>
+				<div class="project-card-role-content">시스템 모듈 리더 / 운영 / 개발</div>
 			</div>
 			
-			<div style="margin-top: 10px;">
+			<div class="project-card-work">
 				<div>업무</div>
-				<ul style="font-size: 16px;">
+				<ul class="project-card-work-list">
 					<li>
-						<div>
+						<div class="project-card-work-item-title">
 							고객 응대
 						</div>
-						<div style="padding-left: 20px;">
-							저는 이 시스템 모듈 업무/개발에 대해 누구보다도 가장 잘알고 있습니다.
+						<div class="project-card-work-item-content">
+							저는 이 시스템 모듈 업무/개발에 대해 누구보다도 잘알고 있습니다.
 							개발자, 설계자, 매니저, 고객등 관계자들은 모르는 내용이 있으면, 모두 저에게 문의합니다.
 							고객의 요구로 저는 개발 프로젝트 이후, 계속 이 업무를 맡아 진행하였으며,
 							이 시스템 모듈 핵심 인력이 되어, 없어선 안될 위치에 있습니다. 
 						</div>
-						<div style="margin-top: 10px;">
-							운영 내용
+					</li>
+					<li>
+						<div class="project-card-work-item-title">
+							시스템 모듈 운영
 						</div>
-						<div style="padding-left: 20px;">
+						<div class="project-card-work-item-content">
 							개발 프로젝트에서 만든 2D/3D 솔루션 Web 기능을 개선/유지보수 합니다.
-							모든 개발 설계를 도맡아하며, 공수를 산출하고, 고객과 협의하여, VOC를 진행합니다.
+							모든 개발 설계를 진행합니다. 공수를 산출하고, 고객과 협의하여, VOC를 진행합니다.
 							Web 개발 내용은 프리랜서 개발자에게 업무를 할당하며,
-							솔루션 관련 내용은 저나 회사 동료가 맡아서 진행했습니다.
-							솔루션 관련 내용은 단순 VOC가 아닌 3D 시뮬레이션 애니메이션 플레이어 / 3D 동영상 녹화 다운로드 / 2D 시뮬레이션 기능 추가 등 모두 난이도가 높은 항목들이며,
-							개발량이 많고, 영향범위가 넓은 항목이 대부분이라 작성된 테스트 코드로 테스트하여 영향도를 알아보고, 
+							솔루션 관련 내용은 저나 회사 동료가 맡아서 진행합니다.
+							저의 주 개발 내용은 단순 VOC가 아닌 3D 시뮬레이션 애니메이션 플레이어 / 3D 동영상 녹화 다운로드 / 2D 시뮬레이션 기능 추가 등 모두 난이도가 높은 항목들이며,
+							개발량이 많고, 영향범위가 넓은 항목이 대부분이라 테스트 코드를 작성했고, 테스트하여 반영합니다. 
 						</div>
-						<div>
-							
+						<div class="project-card-work-item-content">
+							저는 InterMax에 능숙하진 않지만, 장애가 발생한 경우, 트랜잭션 기록을 통해 장애원인을 일부 이해할 수 있습니다.
+							또한 Kubernates web app을 통해 pod 로그를 보고, 커널에 접속하여, 실제 장애 원인을 파악합니다.
 						</div>
 					</li>
-					<li>공통 모듈 개발</li>
-					<li>Nexacro 기반의 솔루션을 Javascript 기반으로 모듈화 및 이관</li>
-					<li>3D 공장 뷰어 개발</li>
-					<li>3D 라이브러리 뷰어 개발</li>
-					<li>최적화 그래프 </li>
+					<li>
+						<div class="project-card-work-item-title">
+							사례
+						</div>
+						<div class="project-card-work-item-content">
+							<div>3D Viewer 동영상 다운로드 기능</div>
+							운영하는 모듈에 시뮬레이션 애니메이션 기능이 탑재되어 있는데, 이를 다운로드하는 기능입니다.
+							시스템 서버 외, 유틸성 서버가 하나 있는데, 이 곳에 노드 RestAPI 서버를 하나 만들고, 이미지 목록을 전달하면,
+							ffmpeg를 통해 비디오를 다운로드 받도록 하였습니다.
+							이미지양이 상당해서 트랜잭션을 분리하여 업로드하도록 API를 만들었습니다.
+							클라이언트는 다운로드 API를 통해 업로드한 이미지를 영상으로 제작할 수 있습니다.
+						</div>
+						<div class="project-card-work-item-content">
+							<div>highcharts server</div>
+							해당 시스템에는 메일 전송 기능이 있는데, 메일에 그래프 결과를 받고 싶어하는 요구가 많아졌습니다.
+							메일에는 보안상의 이유로 iframe이나 script 요소를 넣을 수 없어, 이미지를 입력해야만 했습니다.
+							하지만, highcharts는 클라이언트 라이브러리이므로, 자동 메일을 전송하기 위해 배치나 콜백을 사용하면, 이미지 첨부를 하지 못했습니다.
+							공통 모듈에서 개발해주면 좋겠는데, 그러지 못하여, 유틸 서버에 highcharts 서버 app을 설치하였습니다.
+							시스템에는 개발자 누구나 사용하기 쉽게 그래프 입력 문자열만 넣으면 base64이미지를 얻을 수있는 클래스를 간단하게 설계하여 만들었습니다.
+							<div style="margin-top: 10px;">
+								사실 개발 내용이 별게 없는데, 관계자들은 어려운 내용을 개발하신줄 알고있고, 각 모듈에서도 사용할 수 있어서 좋아하셨습니다.🤭
+							</div> 
+						</div>
+					</li>
 				</ul>
 			</div>
 			
-			<div style="margin-top: 20px;">
+			<div class="project-card-stack">
 				<span class="label label-primary">spring boot</span>
 				<span class="label label-primary">nexacro</span>
 				<span class="label label-primary">InterMax</span>
@@ -279,51 +288,55 @@ a {
 		</div>
 		
 		
-		<div class="col-md-6 col-md-offset-3" style="font-size: 18px; margin-top: 20px; background-color: white; padding: 20px; border-radius: 10px;">
-			<div style="color: #98A8B9;">
-				2020-07 ~ 2021-10
+		<div class="col-md-6 col-md-offset-3 project-card">
+			<div class="project-card-period">
+				2021.05 ~ 2021.10
 			</div>
-			<div style="margin-top: 20px;">
-				<div>
-					수원 GTC 설계 사전 검증 플랫폼 개발 ( 2021.05 ~ 2021.10 )
-				</div>
-				실시간생산최적화솔루션 ( 2020.07 ~ 2020.11 )
+			<div class="project-card-title">
+				수원 GTC 설계 사전 검증 플랫폼 개발
 			</div>
 			
-			<div style="margin-top: 20px;">
+			<div class="project-card-role">
 				<div>역할</div>
-				<div style="padding-left: 20px; font-size: 16px;">프로젝트 리더 / 웹 풀스택 개발 / 시스템 아키텍처</div>
+				<div class="project-card-role-content">프로젝트 리더 / 시스템 아키텍처</div>
 			</div>
 			
-			<div style="margin-top: 10px;">
+			<div class="project-card-work">
 				<div>업무</div>
-				<ul style="font-size: 16px;">
-					<li>인프라 / 시스템 설계</li>
-					<li>공통 모듈 개발</li>
-					<li>Nexacro 기반의 솔루션을 Javascript 기반으로 모듈화 및 이관</li>
-					<li>3D 공장 뷰어 개발</li>
-					<li>3D 라이브러리 뷰어 개발</li>
-					<li>최적화 그래프 </li>
+				<ul class="project-card-work-list">
+					<li>
+						<div class="project-card-work-item-title">
+							프로젝트 리딩
+						</div>
+						<div class="project-card-work-item-content">
+							소규모 프로젝트로 PM / PL / 개발자2명 / 디자이너로 구성되었습니다.
+							회사의 사정으로 
+						</div>
+					</li>
 				</ul>
 			</div>
 			
-			<div style="margin-top: 20px;">
+			<div class="project-card-stack">
 				<span class="label label-primary">spring</span>
-				<span class="label label-primary">mssql</span>
-				<span class="label label-primary">apache-poi</span>
-				<span class="label label-primary">highcharts</span>
+				<span class="label label-primary">threejs</span>
 			</div>
 			
 		</div>
 		
 		
 		
+		
+		
 	</div>
 	
 	
-	<div class="row" style="font-size: 30px; font-weight: bold; background: rgba( 0, 0, 0, 0.7 ); padding: 150px; color: white;">
+	<div id="history-web-2d" class="row" style="font-size: 30px; font-weight: bold; background: rgba( 0, 0, 0, 0.7 ); padding: 150px; color: white;">
 		
-		<div class="col-md-2 col-md-offset-5" style="">
+		<div class="col-md-12" style="text-align: center; font-size: 50px; text-align: center;">
+			어떤 기술을 보유했죠?
+		</div>
+		
+		<div class="col-md-2 col-md-offset-5" style="margin-top: 150px;">
 			<img src="img/html5.png" style="width: 100%;">	
 		</div>
 		<div class="col-md-12 video-title" style="margin-top: 50px;">Web 2D 개발</div>
@@ -465,7 +478,7 @@ a {
 	</div><!-- end 2d -->
 	
 	
-	<div class="row" style="font-size: 30px; font-weight: bold; background: rgba( 255, 255, 255, 0.7 ); padding: 150px; color: black;">
+	<div id="history-web-3d" class="row" style="font-size: 30px; font-weight: bold; background: rgba( 255, 255, 255, 0.7 ); padding: 150px; color: black;">
 		
 		<div class="col-md-2 col-md-offset-5" style="">
 			<img src="img/threejs.png" style="width: 100%;">	
@@ -643,7 +656,13 @@ a {
 	</div>
 	
 	
+	
 </div>
+	<div style="padding: 150px 0px; text-align: center; background-color: black; color: white;">
+		
+		긴 글 읽어주셔서 감사합니다.
+	
+	</div>
 
 </body>
 </html>
