@@ -14,4 +14,15 @@ $(function(){
 		
 	});
 	
+	
+	var $simulationDescButton = $("#simulation-desc-button");
+	var $simulationDesc = $("#simulation-desc");
+	
+	$simulationDescButton.on("click", function(){
+		
+		$simulationDesc.toggle( 500 );
+		
+	});
+	
+	
 });
