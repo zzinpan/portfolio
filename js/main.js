@@ -22,7 +22,6 @@ $(function(){
 	$headerXsButton.on("click", function( e ){
 		
 		e.stopPropagation();
-		$headerXsList.toggleClass( "show" );
 		
 	});
 	
