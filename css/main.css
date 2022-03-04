@@ -1,11 +1,12 @@
 @media (min-width: 992px) { 
 	
+	.media-xs { display: none; }
 	.shin-image { text-align: right; }
 	
 }
 @media (max-width: 992px) { 
 	
-	header { display: none; }
+	.media-md { display: none; }
 	.shin-image { text-align: center; }
 	
 }
