@@ -11,7 +11,7 @@ $(function(){
 		
 	});
 	
-	$headerItem.find("a").on("click", function( e ){
+	$headerItem.on("click", function( e ){
 		
 		e.stopPropagation();
 		
@@ -22,6 +22,7 @@ $(function(){
 	$headerXsButton.on("click", function( e ){
 		
 		e.stopPropagation();
+		$headerXsList.toggleClass( "show" );
 		
 	});
 	
