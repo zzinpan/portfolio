@@ -8,6 +8,10 @@
 	
 	.media-md { display: none; }
 	.shin-image { text-align: center; }
+	.container-fluid, .container {
+		padding: 0;
+		margin: 0;
+    }
 	
 }
 
